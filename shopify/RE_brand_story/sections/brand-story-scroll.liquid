@@ -1,0 +1,93 @@
+{%- comment -%}
+scroll-driven landing page
+{%- endcomment -%}
+
+<section class="brand-story">
+
+  <!-- SCENE 1 : HERO -->
+  <div class="story-scene hero">
+    <div class="story-media">
+      <video autoplay muted loop playsinline>
+        <source src="{{ section.settings.hero_video }}" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="story-content">
+      <h1>{{ section.settings.hero_title }}</h1>
+      <p>{{ section.settings.hero_subtitle }}</p>
+    </div>
+  </div>
+
+  <!-- SCENE 2 : PARALLAX IMAGE -->
+  <div class="story-scene parallax">
+    <img src="{{ section.settings.parallax_image | image_url: width: 2000 }}">
+    <div class="story-content">
+      <h2>{{ section.settings.parallax_text }}</h2>
+    </div>
+  </div>
+
+  <!-- SCENE 3 : TIMELINE -->
+<div class="story-scene timeline">
+  {% for block in section.blocks %}
+    <div class="timeline-item">
+      
+      <div class="timeline-year">
+        <span class="year-shadow">{{ block.settings.year }}</span>
+        <span class="year-main">{{ block.settings.year }}</span>
+      </div>
+
+      <div class="timeline-text">
+        {{ block.settings.text }}
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+
+
+  <!-- SCENE 4 : IMPACT -->
+  <div class="story-scene impact">
+    <h2>{{ section.settings.impact_title }}</h2>
+    <p>{{ section.settings.impact_text }}</p>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Brand Story Scroll",
+  "settings": [
+    { "type": "text", "id": "hero_title", "label": "Hero Title" },
+    { "type": "text", "id": "hero_subtitle", "label": "Hero Subtitle" },
+    { "type": "url", "id": "hero_video", "label": "Hero Video URL" },
+
+    { "type": "image_picker", "id": "parallax_image", "label": "Parallax Image" },
+    { "type": "text", "id": "parallax_text", "label": "Parallax Text" },
+
+    { "type": "text", "id": "impact_title", "label": "Impact Title" },
+    { "type": "textarea", "id": "impact_text", "label": "Impact Text" }
+  ],
+  "blocks": [
+        {
+        "type": "timeline",
+        "name": "Timeline Item",
+        "settings": [
+            {
+            "type": "text",
+            "id": "year",
+            "label": "Year"
+            },
+            {
+            "type": "textarea",
+            "id": "text",
+            "label": "Timeline Text"
+            }
+        ]
+        }
+
+  ],
+  "presets": [
+    { "name": "Brand Story Scroll" }
+  ]
+}
+{% endschema %}

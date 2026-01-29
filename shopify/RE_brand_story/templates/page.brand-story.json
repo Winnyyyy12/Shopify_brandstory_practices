@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "brand-story": {
+      "type": "brand-story-scroll",
+      "blocks": {
+        "timeline_RRyzaT": {
+          "type": "timeline",
+          "settings": {
+            "year": "1893",
+            "text": "The duo win a contract to supply precision parts to the Royal Small Arms Factory of Enfield, Middlesex. To celebrate this prestigious order, they rename their undertaking the Enfield Manufacturing Company Ltd. and call their first Bob Walker Smith designed bicycle, the Enfield. The following year, their bicycles are renamed Royal Enfields and the trademark ‘Made Like A Gun’ is introduced."
+          }
+        },
+        "timeline_V7ND7t": {
+          "type": "timeline",
+          "settings": {
+            "year": "1891",
+            "text": "In November 1891, entrepreneurs Bob Walker Smith and Albert Eadie buy George Townsend & Co. of Hunt End, Redditch. Townsend’s is a well-respected needle manufacturer of almost 50 years standing which has recently begun manufacturing bicycles."
+          }
+        }
+      },
+      "block_order": [
+        "timeline_RRyzaT",
+        "timeline_V7ND7t"
+      ],
+      "settings": {
+        "hero_title": "Built in the fire of Mountains",
+        "hero_subtitle": "Every miles writes a story",
+        "hero_video": "https://admin.shopify.com/store/testing-store-123443321231235422/content/files/32409107988652?selectedView=all",
+        "parallax_image": "shopify://shop_images/pexels-pragyanbezbo-2629414.jpg",
+        "parallax_text": "Not made to impress. Made to endure.",
+        "impact_title": "dark",
+        "impact_text": "A night bike ride offers a unique, almost magical, escape, transforming familiar streets into a quiet, personal sanctuary under the stars. As the bustling daytime traffic subsides, the city becomes a serene, dimly lit landscape, allowing riders to experience a profound sense of peace, solitude, and freedom. The air is cooler and sharper, and with only the soft glow of streetlights or the focused beam of a headlamp guiding the way, sensory perception often feels heightened—the sound of the tires humming on the asphalt becomes rhythmic and meditative. It is a time for introspection, a, and a chance to truly feel in tune with one’s surroundings, making every pedal stroke a \"dance between the bike, the road, and the rider\"."
+      }
+    }
+  },
+  "order": [
+    "brand-story"
+  ]
+}
